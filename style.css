@@ -1,0 +1,127 @@
+    body{font-family: 'Times New Roman',
+    Times,
+    serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-image: url("computer background.jpg");
+    background-repeat: no-repeat;
+    background-attachment:fixed;
+    background-size: 100% 100%;
+    }
+
+    .circular-container {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        border: 2px solid black;
+        overflow: hidden;
+        position: absolute;
+        top: 25%;
+        left: 45%;
+    }
+
+    .circular-container img {
+        width: 150px;
+        height: 150px;
+        border-radius: 50%;
+        display: block;
+    }
+
+    h1 {
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 20px;
+        color: black;
+        position: absolute;
+        text-align: center;
+        top: 15%;
+    }
+
+    @media (max-width: 600px) {
+        body {
+            background-image: url("smartphone\ size.jpg");
+        }
+
+        h1 {
+            display: block;
+            width: 70%;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: 20px;
+            color: black;
+            text-align: center;
+            left: 20%;
+            top: 8%;
+        }
+
+        .circular-container {
+            width: 150px;
+            height: 150px;
+            border: 2px solid black;
+            border-radius: 50%;
+            display: flex;
+            left: 30%;
+        }
+    }
+
+    .login-container {
+        border-radius: 5px;
+        text-align: center;
+        margin-top: 140px;
+    }
+
+    .input-container {
+        text-align: left;
+        font-size: 120%;
+        margin-bottom: 15px;
+    }
+
+    #labelnum {
+        margin-top: 3em;
+        display: flex;
+        margin-bottom: 5px;
+        font-weight: bold;
+    }
+
+    input[type="tel"] {
+        font-size: 100%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    button {
+        display: inline;
+        background-color: #00ff37;
+        border: none;
+        padding: 10px 20px;
+        border-radius: 20px;
+        cursor: pointer;
+        transition: background-color 0.3s;
+        opacity: 0.8;
+        font-size: 15px;
+    }
+
+    button:hover {
+        opacity: 1;
+    }
+
+    #label{
+        display: none;
+        font: inherit;
+        font-weight: bold;
+        margin-bottom: 5px;
+    }
+    #input-field{
+        display: none;
+        font-size: 100%;
+        width: 100%;
+        padding: 10px;
+        border-radius: 10px;
+        margin-bottom: 15px;
+    }
+
+    #button1{
+        display: none;
+    }
