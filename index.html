@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Login</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <h1>An Initiative by the Ministry of Farming and Agriculture</h1>
+    <div class="circular-container">
+        <img src="Ministry of agri and farmers welfare.jpeg">
+    </div>
+    <div class="login-container">
+        <form action="login.php" method="post"> <!-- Replace 'login.php' with your server-side script -->
+            <div class="input-container">
+                <label id="labelnum" for="mobileNumber">Mobile Number:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" placeholder="Enter your mobile number" maxlength="10" required>
+            </div>
+            <button onclick="showOTPfield()" id="button">Send OTP</button>
+            <div class="otp-verifier">
+                <label id="label" for="otp">OTP</label>
+                <input id="input-field" placeholder="Enter OTP" type="text" inputmode="numeric" maxlength="6" required>
+                <button id="button1" type="submit">Verify</button>
+            </div>
+        </form>
+    </div>
+    <script>
+        function showOTPfield()
+        {
+            document.getElementById('button').style.display="none";
+            document.getElementById('label').style.display="flex";
+            document.getElementById('input-field').style.display="flex";
+            document.getElementById('button1').style.display="inline";
+
+        }
+    </script>
+</body>
+
+</html>
